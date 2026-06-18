@@ -1,2 +1,21 @@
-# TGlyph
-Font Texture Generation Engine - สร้างและจัดการ Texture สำหรับไฟล์ฟอนต์
+# 🆎 TGlyph (Font Texture Generator)
+
+TGlyph เป็นขุมพลังเบื้องหลังการสร้างฟอนต์ภาษาไทยในเกม มันคือเครื่องมือสำหรับ **สร้าง Texture Atlas (.png, .dds) และไฟล์พิกัด (FNT/XML) จากไฟล์ฟอนต์ .ttf/.otf** เพื่อนำไปยัดลงในเอนจิ้นเกมที่ไม่ได้รองรับภาษาไทยแบบ Native
+
+## 🌟 ฟีเจอร์หลัก (Key Features)
+- **Texture Atlas Generation:** แพ็กตัวอักษรไทยทั้งหมดลงในแผ่นภาพ (Sprite Sheet) แผ่นเดียวอย่างมีประสิทธิภาพ
+- **Distance Field Support:** รองรับการสร้างฟอนต์แบบ SDF (Signed Distance Field) เพื่อความคมชัดทุกความละเอียด
+- **Kerning & Glyph Data:** สกัดข้อมูลความกว้างและระยะห่างของแต่ละตัวอักษรออกมาเป็นไฟล์ Data
+- **Engine-Specific Export:** เลือกรูปแบบไฟล์ส่งออกให้ตรงกับเอนจิ้นเป้าหมาย (เช่น Unreal Engine, Bitmap Font)
+
+## ⚙️ วิธีติดตั้ง (Installation)
+1. ดาวน์โหลดผ่านโปรแกรม **THub Launcher** (ในส่วน Flagship Products)
+2. หากโหลดตรงผ่าน [Releases](https://github.com/memolyviza2012-max/TGlyph/releases) ให้แตกไฟล์และรันตัวโปรแกรมหลัก
+
+## 🚀 วิธีใช้งานเบื้องต้น (How to Use)
+1. เปิดโปรแกรม TGlyph
+2. โหลดไฟล์ฟอนต์ `.ttf` หรือ `.otf` ต้นฉบับที่คุณต้องการใช้ในเกม
+3. กำหนดขนาดฟอนต์ (Font Size) และระยะห่าง (Padding) เพื่อไม่ให้ตัวอักษรติดกันเกินไป
+4. พิมพ์ชุดตัวอักษรที่ต้องการ (เช่น ก-ฮ, สระ, วรรณยุกต์)
+5. กด **Generate Atlas** โปรแกรมจะส่งออกไฟล์ `.png` (ภาพฟอนต์) และไฟล์ `.json` / `.fnt` (พิกัด) ออกมาให้
+6. นำไฟล์ที่ได้ไปเข้ากระบวนการ Modding ของแต่ละเกมต่อไป
